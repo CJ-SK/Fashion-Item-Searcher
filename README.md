@@ -22,4 +22,4 @@
 
 ## License
 
-[MIT](https://github.com/CJ-SK/Fashion-Item-Searcher/LICENSE)
+[MIT](https://github.com/CJ-SK/Fashion-Item-Searcher/blob/main/LICENSE)

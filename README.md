@@ -18,3 +18,8 @@
 <img width="2560" alt="스크린샷 2022-11-07 오전 12 06 25" src="https://user-images.githubusercontent.com/50130497/200178596-fed61fa5-6b4d-42eb-b2e6-09eabeb51770.png">
 <img width="2560" alt="스크린샷 2022-11-07 오전 12 15 17" src="https://user-images.githubusercontent.com/50130497/200179010-adc8df2e-f68f-44a7-b97d-3e1193468864.png">
 <img width="2560" alt="스크린샷 2022-11-07 오전 12 15 49" src="https://user-images.githubusercontent.com/50130497/200179040-8cb7858b-29ad-406e-b8dc-defd6d1def39.png">
+
+
+## License
+
+[MIT](https://github.com/CJ-SK/Fashion-Item-Searcher/LICENSE)

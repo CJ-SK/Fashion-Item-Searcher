@@ -1,13 +1,13 @@
 # Fashion-Item-Searcher
 ## 이미지 객체 분할 기반 검색정보 매핑 시스템 (이거 어디서 사?)
 ### “Where can I buy this?” - Fashion Item Searcher using Instance Segmentation with Mask R-CNN
-- model train/test, search algorithm code partially uploaded
-- final implemented system code is not here (only on server + test not available since system is currently shut down due to server costs)
+- model train/test code arranged in .ipynb form
+- system currently shut down due to server costs
 
 ### 시연 영상
 ![fashion_item_searcher_demo](https://user-images.githubusercontent.com/50130497/205067943-4217e432-d91f-4def-94b2-206f9a4e58d2.gif)
 
-## 프로젝트 설명
+### 프로젝트 설명
 <!-- ![model1](https://user-images.githubusercontent.com/50130497/176148142-8f2f2030-e5f2-44de-b2f9-4892a5e7ad58.png)
 ![model2](https://user-images.githubusercontent.com/50130497/176148126-18e56f25-1d46-4746-8fc6-97b72aa52d13.png)
 ![demo1](https://user-images.githubusercontent.com/50130497/176148165-5a7a18b4-4af4-4e69-aa1c-56e78c57adc4.png)
@@ -20,6 +20,6 @@
 <img width="2560" alt="스크린샷 2022-11-07 오전 12 15 49" src="https://user-images.githubusercontent.com/50130497/200179040-8cb7858b-29ad-406e-b8dc-defd6d1def39.png">
 
 
-## License
+### License
 
 [MIT](https://github.com/CJ-SK/Fashion-Item-Searcher/blob/main/LICENSE)

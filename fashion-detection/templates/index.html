@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+                <!-- Required dependencies -->
+                <!-- <script type="text/javascript"
+                                                src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.1/prop-types.min.js"></script>
+                <script type="text/javascript"
+                                                src="https://cdnjs.cloudflare.com/ajax/libs/react/16.3.2/umd/react.production.min.js"></script>
+                <script type="text/javascript"
+                                                src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.3.2/umd/react-dom.production.min.js"></script>
+                <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+                <script type="text/babel" data-presets="es2017, stage-3"
+                                                data-plugins="syntax-async-functions,transform-class-properties,transform-es2015-modules-umd, transform-async-to-generator"></script>
+                <!-- Optional dependencies -->
+                <!-- <script type="text/javascript"
+                                                src="https://cdnjs.cloudflare.com/ajax/libs/react-transition-group/2.2.1/react-transition-group.min.js"></script>
+                <script type="text/javascript"
+                                                src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+                <script type="text/javascript"
+                                                src="https://cdnjs.cloudflare.com/ajax/libs/react-popper/0.10.4/umd/react-popper.min.js"></script>
+
+                <!-- Reactstrap -->
+                <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/reactstrap/7.1.0/reactstrap.min.js"></script>
+                <script src=" https://cdnjs.cloudflare.com/ajax/libs/react-router/4.3.1/react-router.min.js"></script>
+
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/react-markdown/4.0.6/react-markdown.js"></script>
+                <script src="https://unpkg.com/react-router-dom@4.3.1/umd/react-router-dom.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script> -->
+
+                <!-- Lastly, include your app's bundle -->
+								<link rel="preconnect" href="https://fonts.googleapis.com">
+								<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+								<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,800&display=swap" rel="stylesheet">
+                <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+                <link type="text/css" rel="stylesheet" href="/static/custom.css"/>
+                <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                <script type="text/javascript" src="/static/initial.js"></script>
+
+</head>
+
+
+<body>
+  <div class='outer-div'>
+    <div class='inner-div'>
+            <img id="logo" src="/static/logo.png" alt="">
+            <br><br>
+      <h1 id="title" style="">E-goe<br>Audiso Sa?</h1>
+      <br><br>
+      <form id="input_pic" style="text-align:center;" action = "/inference" method = "POST" enctype = "multipart/form-data">
+              <input type = "file" name = "file" onchange="readURL(this);"/>
+              <!-- <input name = "submit" type = "submit"/> -->
+              <!-- <input class="w-btn-neon2" type="button" name="submit" value="DETECT!" onclick="upload();" /> -->
+      </form>
+      <div>
+      　<button class="w-btn-neon2" type="submit" form="input_pic" onclick="upload();">DETECT!</button>
+      </div>
+      <br><br>
+      <!-- <form style="text-align:center;" action = "/detect" method = "GET" enctype = "multipart/form-data">
+              <input type="text" name="url">
+              <input type = "submit"/>
+      </form> -->
+      <br>
+    </div>
+    <div id="loader">
+      <div class="face">
+      <?xml version="1.0" encoding="utf-8" standalone="yes"?>
+      <svg version="1.1"
+         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         x="0px" y="0px" width="270px" height="270px" viewBox="0.032 0 270 270"
+         overflow="visible" enable-background="new 0.032 0 270 270" xml:space="preserve">
+      <defs>
+      </defs>
+      <g id="supervisior">
+        <g class="head">
+          <path fill="#C1C0BC" d="M135,10c33.389,0,64.778,13.002,88.388,36.612S260,101.611,260,135s-13.003,64.779-36.612,88.388
+        S168.389,260,135,260s-64.778-13.002-88.388-36.612C23.002,199.779,10,168.389,10,135s13.002-64.779,36.612-88.388
+        C70.222,23.002,101.611,10,135,10 M135,0C60.442,0,0,60.441,0,135s60.442,135,135,135s135-60.441,135-135S209.558,0,135,0L135,0z"
+          />
+        </g>
+        <g id="eyeLeft">
+          <g class="eyeLeft">
+            <circle class="eye" fill="none" stroke="#C1C0BC" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" cx="66.063" cy="127.51" r="18.849"/>
+            <circle class="pupil" fill="#C1C0BC" cx="66.063" cy="127.511" r="8.949"/>
+          </g>
+          <path class="closedLeft" fill="none" stroke="#C1C0BC" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="
+      M47.238,127.972c0.247,10.194,8.57,18.387,18.824,18.387s18.579-8.193,18.826-18.387"/>
+        </g>
+        <g id="eyeRight">
+          <g class="eyeRight">
+            <circle class="eye" fill="none" stroke="#C1C0BC" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" cx="203.936" cy="127.51" r="18.849"/>
+            <circle class="pupil" fill="#C1C0BC" cx="203.935" cy="127.511" r="8.949"/>
+          </g>
+          <path class="closedRight" fill="none" stroke="#C1C0BC" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="
+      M185.11,127.972c0.247,10.194,8.571,18.387,18.824,18.387c10.255,0,18.579-8.193,18.826-18.387"/>
+        </g>
+        <g class="mouth">
+          <polyline class="bar" fill="none" stroke="#C1C0BC" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" points="
+      111.532,232.832 135.032,232.832 158.532,232.832 "/>
+          <path class="smile" fill="none" stroke="#C1C0BC" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="
+      M62.485,168.615c0.951,35.593,33.016,64.198,72.511,64.198c39.503,0,71.566-28.605,72.519-64.198"/>
+        </g>
+      </g>
+      </svg>
+      </div>
+      <div class="preview">
+        <p class="detecting">Detecting Fashion Items...</p>
+        <img id="preview-img" src="" alt="">
+      </div>
+      <div class="loading-bar"></div>
+    </div>
+    <div id="refresher">
+      <p class="refresh">Processing result page...</p>
+    </div>
+  </div>

@@ -2,6 +2,7 @@
 ## 이미지 객체 분할 기반 검색정보 매핑 시스템 (이거 어디서 사?)
 ### “Where can I buy this?” - Fashion Item Searcher using Instance Segmentation with Mask R-CNN
 - model train/test code arranged in .ipynb form
+- model file not included due to file size
 - system currently shut down due to server costs
 
 ### 시연 영상

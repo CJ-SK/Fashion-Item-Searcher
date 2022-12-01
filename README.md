@@ -5,7 +5,7 @@
 - final implemented system code is not here (only on server + test not available since system is currently shut down due to server costs)
 
 ### 시연 영상
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/50130497/200178553-bb6d3f4c-1eb7-4e9a-a9f3-63a04b13d94f.gif)
+![fashion_item_searcher_demo](https://user-images.githubusercontent.com/50130497/205067943-4217e432-d91f-4def-94b2-206f9a4e58d2.gif)
 
 ## 프로젝트 설명
 <!-- ![model1](https://user-images.githubusercontent.com/50130497/176148142-8f2f2030-e5f2-44de-b2f9-4892a5e7ad58.png)
